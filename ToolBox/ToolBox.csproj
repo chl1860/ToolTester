@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D170A96-8C83-4B6F-A4BE-3FC492CDF767}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ToolBox</RootNamespace>
+    <AssemblyName>ToolBox</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PaintDotNet.Base">
+      <HintPath>..\ShareDLL\PaintDotNet.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintDotNet.Core">
+      <HintPath>..\ShareDLL\PaintDotNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintDotNet.Data">
+      <HintPath>..\ShareDLL\PaintDotNet.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintDotNet.Effects">
+      <HintPath>..\ShareDLL\PaintDotNet.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintDotNet.Framework">
+      <HintPath>..\ShareDLL\PaintDotNet.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintDotNet.Resources">
+      <HintPath>..\ShareDLL\PaintDotNet.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintDotNet.SystemLayer">
+      <HintPath>..\ShareDLL\PaintDotNet.SystemLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotoShop">
+      <HintPath>..\ShareDLL\PhotoShop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algrithm\ClsNode.cs" />
+    <Compile Include="Algrithm\IntConventor.cs" />
+    <Compile Include="Algrithm\InverseString.cs" />
+    <Compile Include="Algrithm\MathAlgrithm.cs" />
+    <Compile Include="ClassTools\ClassAdapter.cs" />
+    <Compile Include="ClassTools\Interfaces\IClassAdapter.cs" />
+    <Compile Include="DbTools\DbOperator.cs" />
+    <Compile Include="DbTools\Interfaces\IDbCmd.cs" />
+    <Compile Include="DbTools\Interfaces\IDbConn.cs" />
+    <Compile Include="DbTools\Interfaces\IDbOperator.cs" />
+    <Compile Include="Documents\XmlDoc\Interfaces\IXmlNode.cs" />
+    <Compile Include="Documents\XmlDoc\Interfaces\IXmlOperater.cs" />
+    <Compile Include="Documents\XmlDoc\XmlNodeCollection.cs" />
+    <Compile Include="Documents\XmlDoc\XmlOperater.cs" />
+    <Compile Include="Encryption.cs" />
+    <Compile Include="FileWatch\FileWatcher.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FileWatch\IWatched.cs" />
+    <Compile Include="HttpTools\BaiduMap\BaiduMapGeoPointUrl.cs" />
+    <Compile Include="HttpTools\ClsExtension.cs" />
+    <Compile Include="HttpTools\HttpOperator.cs" />
+    <Compile Include="HttpTools\IUrlGenerator.cs" />
+    <Compile Include="ImageTools\ImageOperator.cs" />
+    <Compile Include="ImageTools\Interfaces\IimageOperator.cs" />
+    <Compile Include="ImageTools\PSDOperator.cs" />
+    <Compile Include="JsonSerializer.cs" />
+    <Compile Include="LocalPCTools\Implemention\TxtIpNetConfig.cs" />
+    <Compile Include="LocalPCTools\Unity\EnumOption.cs" />
+    <Compile Include="LocalPCTools\Unity\ExtensionTool.cs" />
+    <Compile Include="LocalPCTools\Interfaces\ICommandModule.cs" />
+    <Compile Include="LocalPCTools\Implemention\IpModule.cs" />
+    <Compile Include="LocalPCTools\IPAddrOperator.cs" />
+    <Compile Include="LocalPCTools\Unity\BaseCommandInfo.cs" />
+    <Compile Include="LocalPCTools\Implemention\NetshCommandInfo.cs" />
+    <Compile Include="LocalPCTools\Implemention\UrlTxtOperator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Documents\TxtDoc\TxtOperator.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

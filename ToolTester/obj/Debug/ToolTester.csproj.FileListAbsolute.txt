@@ -1,0 +1,13 @@
+D:\.Net Test\ToolTester\ToolTester\bin\Debug\ToolTester.exe.config
+D:\.Net Test\ToolTester\ToolTester\bin\Debug\ToolTester.exe.manifest
+D:\.Net Test\ToolTester\ToolTester\bin\Debug\ToolTester.application
+D:\.Net Test\ToolTester\ToolTester\bin\Debug\ToolTester.exe
+D:\.Net Test\ToolTester\ToolTester\bin\Debug\ToolTester.pdb
+D:\.Net Test\ToolTester\ToolTester\bin\Debug\ToolBox.dll
+D:\.Net Test\ToolTester\ToolTester\bin\Debug\ToolBox.pdb
+D:\.Net Test\ToolTester\ToolTester\obj\Debug\ToolTester.csprojResolveAssemblyReference.cache
+D:\.Net Test\ToolTester\ToolTester\obj\Debug\ToolTester.exe.manifest
+D:\.Net Test\ToolTester\ToolTester\obj\Debug\ToolTester.application
+D:\.Net Test\ToolTester\ToolTester\obj\Debug\ToolTester.exe
+D:\.Net Test\ToolTester\ToolTester\obj\Debug\ToolTester.pdb
+D:\.Net Test\ToolTester\ToolTester\bin\Debug\PhotoShop.dll

@@ -1,0 +1,6 @@
+D:\.Net Test\ToolTester\ToolBox\bin\Debug\ToolBox.dll
+D:\.Net Test\ToolTester\ToolBox\bin\Debug\ToolBox.pdb
+D:\.Net Test\ToolTester\ToolBox\obj\Debug\ToolBox.csprojResolveAssemblyReference.cache
+D:\.Net Test\ToolTester\ToolBox\obj\Debug\ToolBox.dll
+D:\.Net Test\ToolTester\ToolBox\obj\Debug\ToolBox.pdb
+D:\.Net Test\ToolTester\ToolBox\bin\Debug\PhotoShop.dll
